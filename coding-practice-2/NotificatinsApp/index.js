@@ -1,7 +1,6 @@
 const Notification = props => {
   //  Write your code here.
-  const {boxDetails} = props
-  const {className, imgUrl, message} = boxDetails
+  const {className, imgUrl, message} = props
   console.log(props)
   return (
     <li className={className}>
@@ -11,6 +10,7 @@ const Notification = props => {
   )
 }
 
+/*
 const boxDetails = [
   {
     uniqueNo: 1,
@@ -37,14 +37,33 @@ const boxDetails = [
     message: 'Error Message',
   },
 ]
+
+*/
 const element = (
   //  Write your code here.
   <div>
     <h1>Notifications</h1>
     <ul>
-      {boxDetails.map(eachItem => (
-        <Notification boxDetails={eachItem} />
-      ))}
+      <Notification
+        className='box1'
+        imgUrl='https://assets.ccbp.in/frontend/react-js/primary-icon-img.png'
+        message='Information Message'
+      />
+      <Notification
+        className='box2'
+        imgUrl='https://assets.ccbp.in/frontend/react-js/success-icon-img.png'
+        message='Success Message'
+      />
+      <Notification
+        className='box3'
+        imgUrl='https://assets.ccbp.in/frontend/react-js/warning-icon-img.png'
+        message='Danger Message'
+      />
+      <Notification
+        className='box4'
+        imgUrl='https://assets.ccbp.in/frontend/react-js/danger-icon-img.png'
+        message='Error Message'
+      />
     </ul>
   </div>
 )
