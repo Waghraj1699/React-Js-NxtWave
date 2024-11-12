@@ -48,7 +48,7 @@ class Speedometer extends Component {
               className="apply-break-button button"
               onClick={this.onClickApplyBreakButton}
             >
-              Apply Break
+              Apply Brake
             </button>
           </div>
         </dib>
