@@ -20,7 +20,7 @@ class RandomNumberGenerator extends Component {
         <div className="counter-container">
           <h1 className="heading">Random Number</h1>
           <p className="para">
-            Generate the random number in the range of 0 to 100
+            Generate a random number in the range of 0 to 100
           </p>
           <button type="button" className="button" onClick={this.onIncreament}>
             Generate
